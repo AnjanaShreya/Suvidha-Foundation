@@ -7,71 +7,27 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Suvidha Foundation | Gallery</title>
+        <title>Help Us</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
+
         <link href="css/bootstrap-icons.css" rel="stylesheet">
+
         <link href="css/tooplate-clean-work.css" rel="stylesheet">
 
         <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto auto auto;
-              padding: 10px;
-            }
-            .grid-item {
-              padding: 20px;
-              font-size: 30px;
-              text-align: center;
-            }
-            .grid-item > a > img {
-                border-radius: 20px;
-                border: solid 2px grey;
-            } 
-            .grids {
-                padding: 10px;
-                font-size: 23px;
-                font-weight: bold;
-            }
-            .zoom {
-                width: 100%;
-                height: 100%;
-                transition: transform 0.5s ease;
-            }
-            .zoom:hover {
-                animation: zoomAnimation 1s forwards;
-            }
-            @keyframes zoomAnimation {
-                0% {
-                    transform: scale(1);
-                }
-                100% {
-                    transform: scale(1.2);
+            @media (min-width: 990px) {
+                .centers {
+                    margin-left: 170px;
                 }
             }
-            @media (min-width: 1200px) {
-                .grid-container {
-                    display: grid;
-                    grid-template-columns: auto auto auto;
-                }
-            }
-            @media (max-width: 1199px) and (min-width: 768px) {
-                .grid-container {
-                    display: grid;
-                    grid-template-columns: max-content;   
-                }
-            }
-            @media (max-width: 767px) {
-                .grid-container {
-                    display: grid;
-                    grid-template-columns: min-content;
-                }
-            }
-
         </style>
     </head>
     
@@ -104,9 +60,9 @@
         </header>
 
         <nav class="navbar navbar-expand-lg">
-            <div class="container" >
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <span class="ms-2"><img src="simages/SuvidhaLogo.png" alt=""></span>
+                    <img src="simages/SuvidhaLogo.png" alt="">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,17 +75,17 @@
                             <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe4vDnye2muE9yynJek6Swvamie2Idbu-LWAhQa0oMus5KJDg/viewform">Apply for Internship</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="help_now.html">Help Now</a>
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" style="background-color: #7fbcf0;" href="help_now.html">Help Now</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Events</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">Gallery</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">Our Donors</a>
                         </li>
 
@@ -150,7 +106,7 @@
                     <div class="row">
 
                         <div class="col-lg-7 col-12">
-                            <h1 class="text-white mb-lg-0">Gallery</h1>
+                            <h1 class="text-white mb-lg-0">Help Us</h1>
                         </div>
 
                         <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
@@ -158,7 +114,7 @@
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Help Now</li>
                                 </ol>
                             </nav>
                         </div>
@@ -170,82 +126,65 @@
 
             <section class="section-padding">
                 <div class="container">
-                    <div class="col-lg-12">
-                        <div class="featured-block">
-                            <h2 class="mb-4">Moments of Impact: Capturing the Journey of NGO</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="featured-block" style="padding-bottom: 0;">
+                                <h2 class="mb-4">Account Details</h2>                              
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <section class="team-section section-padding section-bg">
-                    <div class="container">
-                        <div class="row">                            
-                            <div class="grid-container">
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/11DrNvVoYiIlmKUDW2AvsiklJTuIDL3Gk" target="_blank"><img src="simages/free-workshops.jpg"></a>
-                                    <p class="grids">FREE WORKSHOPS</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1FKG4shImI-9JRavKIP-0b-Tp9Hd205VI" target="_blank"><img src="simages/BooksDistribution.jpg"></a>
-                                    <p class="grids">BOOK DISTRIBUTION</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank"><img src="simages/OnlineEvents.jpg"></a>
-                                    <p class="grids">ONLINE EVENTS</p>
-                                </div>  
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1nOFKvOjhWsbfVVPGumOfpLrFe2364_zK" target="_blank"><img src="simages/ClothsDistribution.jpg"></a>
-                                    <p class="grids">CLOTHES DISTRIBUTION</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1V5Owzjc00GT_U2Mw_bdOMbiCYSxmScSw" target="_blank"><img src="simages/TreePlantation.jpg"></a>
-                                    <p class="grids">TREE PLANTATIONS</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1ucG-Ltm_6fAwZ-1ta4-nHhRdKpu-3EAN" target="_blank"><img src="simages/FreeEducation.jpg"></a>
-                                    <p class="grids">FREE EDUCATION</p>
-                                </div>  
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1_V-acFibBsweHcM-R-P__4EQWpauB6dK" target="_blank"><img src="simages/Women'sDay.jpg"></a>
-                                    <p class="grids">WOMEN'S DAY</p>
-                                </div>  
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1AfCK5kJqf9_N_JGd8wqUhNesS8k1tVmw" target="_blank"><img src="simages/FoodDistribution.jpg"></a>
-                                    <p class="grids">FOOD DISTRIBUTION</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank"><img src="simages/SuvidhaEvents.jpg"></a>
-                                    <p class="grids">SUVIDHA EVENTS</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1tMkME479AhVFQ5pUZag3-YPgNWhIn7Rl" target="_blank"><img src="simages/SanitaryPad.jpg"></a>
-                                    <p class="grids">EMPOWERING WOMEN</p>
-                                </div>
-                                <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1xr7jhBYaap-tZ2puU5HiF6ccitJtBfaB" target="_blank"><img src="simages/AnimalFeeding.jpg"></a>
-                                    <p class="grids">ANIMAL FEEDING</p>
-                                </div>  
-                            </div>
-  
-                        </div>
-                    </div>
-                </section>
             </section>
 
+
+            <section class="team-section section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-lg-center mt-4 mt-lg-0 mt-md-0 mb-5 mb-lg-0 centers">
+                            <div class="team-info mx-auto mx-lg-0">
+                                <h3  style="padding-bottom: 10px;">For Indian Donors</h3>
+                                <div class=" mt-3 pt-3">
+                                    <p class="d-flex mb-0">
+                                        Bank Of Baroda
+                                        City: Nagpur
+                                        Contact No: +91 8010996763
+                                        Account Name: Suvidha Mahila Mandal
+                                        Suvidha Account No: 97840100027609
+                                        IFSC Code: BARB0DBKPAR
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-lg-center mt-4 mt-lg-0 mt-md-0 centers">
+                            <div class="team-info mx-auto mx-lg-0">
+                                QR Code
+                                <div class="border-top mt-3">
+                                    <p class="d-flex mb-0">
+                                        <img src="simages/QR-Codes.jpg">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
                         <div>
-                            <img src="simages/SuvidhaLogo.png" style="width: 300px;" alt="logo">
+                            <img src="simages/SuvidhaLogo.png" alt="">
                         </div>
-
-                        <ul class="footer-menu d-flex flex-wrap ms-5">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link" style="font-size: 25px;">Suvidha Foundation (Suvidha Mahila Mandal)</a></li>
-                        </ul>
                     </div>
+
+                    
                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <h5 class="site-footer-title mb-3">Office Headquarters-</h5>
 
@@ -279,6 +218,9 @@
                             </li>
                         </ul>
                     </div>
+
+
+
                     <div class="col-lg-5 col-md-12 col-12 mb-4 mb-lg-0 mb-md-0">
                         <h5 class="site-footer-title mb-3">Our Certificates</h5>
 
@@ -319,8 +261,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    
 
                     <div class="col-lg-3 col-6 mt-3 mt-lg-0 mt-md-0">
                         <div class="featured-block">
