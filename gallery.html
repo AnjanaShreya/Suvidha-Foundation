@@ -24,9 +24,15 @@
               padding: 10px;
             }
             .grid-item {
-              padding: 20px;
               font-size: 30px;
               text-align: center;
+              opacity: 0;
+              transform: translateY(120px);
+              transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+            }
+            .grid-item.visible {
+              opacity: 1;
+              transform: translateY(0);
             }
             .grid-item > a > img {
                 border-radius: 20px;
@@ -50,7 +56,7 @@
                     transform: scale(1);
                 }
                 100% {
-                    transform: scale(1.2);
+                    transform: scale(1.15);
                 }
             }
             @media (min-width: 1200px) {
@@ -71,7 +77,6 @@
                     grid-template-columns: min-content;
                 }
             }
-
         </style>
     </head>
     
@@ -223,155 +228,103 @@
                                 <div class="grid-item zoom">
                                     <a href="https://drive.google.com/drive/u/1/folders/1xr7jhBYaap-tZ2puU5HiF6ccitJtBfaB" target="_blank"><img src="simages/AnimalFeeding.jpg"></a>
                                     <p class="grids">ANIMAL FEEDING</p>
-                                </div>  
+                                </div>
                             </div>
-  
                         </div>
                     </div>
                 </section>
             </section>
-
         </main>
 
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    
-                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
-                        <div>
-                            <img src="simages/SuvidhaLogo.png" style="width: 300px;" alt="logo">
-                        </div>
 
-                        <ul class="footer-menu d-flex flex-wrap ms-5">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link" style="font-size: 25px;">Suvidha Foundation (Suvidha Mahila Mandal)</a></li>
+                    <div class="col-lg-6 col-md-6 col-12 mb-4 pb-2">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="events.html" class="site-footer-link">Events</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="about.html" class="site-footer-link">Gallery</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="about.html" class="site-footer-link">Our Donors</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="contact.html" class="site-footer-link">Contact</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                        <h5 class="site-footer-title mb-3">Office Headquarters-</h5>
 
-                        <p class="text-white d-flex mt-3 mb-2">
-                            Nagpur Headquarters:<br>
-                            Suvidha Foundation, Walni Ward No. 1, Jai Bhole Nagar, Walni, Saoner Nagpur, Maharashtra 441102
-                        </p>
+                    <div class="col-lg-6 col-md-6 col-12 mb-4 pb-2">
+                        <h5 class="site-footer-title mb-3">Contact Information</h5>
 
                         <p class="text-white d-flex mb-2">
-                            Hyderabad Headquarter:<br>
-                            Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad
+                            <i class="bi-telephone me-2"></i>
+
+                            <a href="tel:+91 7020044091" class="site-footer-link">
+                                +91 7020044091
+                            </a>
                         </p>
 
-                        <ul class="social-icon mt-4">
-                            <li class="social-icon-item">
-                                <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" target="_blank" class="social-icon-link button button--skoll">
-                                    <span class="bi-linkedin"></span>
-                                </a>
-                            </li>
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
 
-                            <li class="social-icon-item">
-                                <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank" class="social-icon-link button button--skoll">
-                                    <span class="bi-facebook"></span>
-                                </a>
-                            </li>
+                            <a href="mailto:info@suvidhafoundationedutech.org" class="site-footer-link">
+                                info@suvidhafoundationedutech.org
+                            </a>
+                        </p>
 
-                            <li class="social-icon-item">
-                                <a href="https://www.instagram.com/suvidha_mahila_mandal" target="_blank" class="social-icon-link button button--skoll">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-12 mb-4 mb-lg-0 mb-md-0">
-                        <h5 class="site-footer-title mb-3">Our Certificates</h5>
-
-                        <ul class="footer-menu" style="font-size: 20px;">
-                            <li class="footer-menu-item">
-                                <a href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf" target="_blank" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    80G Certificate
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf" target="_blank" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    12A Certificate
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF" target="_blank" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    CSR Certificate
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf" target="_blank" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Suvidha Darpan Registration
-                                </a>
-                            </li>
-
-                            <li class="footer-menu-item">
-                                <a href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf" target="_blank" class="footer-menu-link">
-                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                    Suvidha Pan Card
-                                </a>
-                            </li>
-                        </ul>
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            Suvidha Mahila Mandal  Vijaypura, Basmath, Hingoli, Maharashtra - 431512
+                        </p>
                     </div>
 
+                    <div class="col-lg-12 col-12">
+                        <div class="copyright-text-wrap">
+                            <p class="copyright-text">Copyright © 2023 Suvidha Foundation
+                            <br>All Rights Reserved. 
+                            <br><br>
+                            Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                        </div>
+                    </div>
                     
-
-                    <div class="col-lg-3 col-6 mt-3 mt-lg-0 mt-md-0">
-                        <div class="featured-block">
-                            <h5 class="text-white mb-3">Useful Links</h5>
-                            <ul style="font-size: 20px;">
-                                <li class="footer-menu-item">
-                                    <a href="https://suvidhafoundationedutech.org/verify.php" target="_blank" class="footer-menu-link">
-                                        <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                        Verify Your Certificate
-                                    </a>
-                                </li>
-                                <li class="footer-menu-item">
-                                    <a href="#" target="_blank" class="footer-menu-link">
-                                        <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
-                                        privacy Policy
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="site-footer-bottom">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <p class="copyright-text mb-0">© Suvidha Foundation (Suvidha Mahila Mandal), All Right Reserved.</p>
-                        </div>
-                        
-                        <div class="col-lg-6 col-12 text-end">
-                            <p class="copyright-text mb-0">
-                            // <a href="#" target="_parent">By Suvidha Foundation</a> //</p>
-                        </div>
-                        
-                    </div>
                 </div>
             </div>
         </footer>
-
+      
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
         <script src="js/counter.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/animated-headline.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const gridItems = document.querySelectorAll('.grid-item');
 
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        } else {
+                            entry.target.classList.remove('visible');
+                        }
+                    });
+                });
+
+                gridItems.forEach(item => {
+                    observer.observe(item);
+                });
+            });
+        </script>
     </body>
 </html>
