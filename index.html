@@ -16,141 +16,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
         <link href="css/tooplate-clean-work.css" rel="stylesheet">
-
-        <style>
-            @media (min-width: 990px) {
-                .centers {
-                    margin-left: 170px;
-                }
-            }
-            .size {
-                width: auto;
-                height: auto;
-                transform: scale(1.5);
-            }
-            @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
-
-            body {
-                transition: background .4s ease-in;
-            }
-
-            input[type=radio] {
-                display: none;
-            }
-
-            .card {
-                position: absolute;
-                width: 60%;
-                height: 100%;
-                left: 0;
-                right: 0;
-                margin: auto;
-                transition: transform .4s ease;
-                cursor: pointer;
-            }
-
-            .container-slide {
-                width: 650px;
-                height: 480px;
-                transform-style: preserve-3d;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .cards {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-
-            #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-                transform: translatex(-40%) scale(.8);
-                opacity: .4;
-                z-index: 0;
-            }
-
-            #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-                transform: translatex(40%) scale(.8);
-                opacity: .4;
-                z-index: 0;
-            }
-
-            #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-                transform: translatex(0) scale(1);
-                opacity: 1;
-                z-index: 1;
-            }
-            h3 {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 0;
-                text-decoration: underline;
-            }
-            .cardtext {
-                padding: 20px;
-            }
-            .box {
-                background-color: #a7cced;
-                border-radius: 20px;
-                border: #2772b5 solid;
-            }
-            .cardtext::-webkit-scrollbar {
-                width: 3px;
-            }
-            .cardtext::-webkit-scrollbar-thumb {
-                background: #2772b5; 
-                border-radius: 10px;
-                color: rgb(99, 98, 98);
-            }
-            .img1 {
-                max-width: 520px; 
-                max-height: 520px; 
-                margin-left: 60px;
-            }
-            @media (max-width: 620px) {
-                .img1 {
-                    max-width: 320px; 
-                    max-height: 320px;   
-                }
-            }
-            .iconss {
-                width: 80px;
-                height: auto;
-            }
-            .icons1 {
-                width: 100px;
-                height: 100px;
-            }
-            @media (min-width: 720px) {
-                .adjust {
-                    margin: 25px; 
-                    height: 300px; 
-                    display: flex; 
-                    gap: 20px; 
-                    justify-content: center; 
-                    align-items: center;
-                }
-                .adjust2 {
-                    margin-top: 35px; 
-                    height: 310px; 
-                    display: flex;
-                }
-            }
-            @media (max-width: 720px) {
-                .adjust {
-                    margin: 25px; 
-                    display: block; 
-                    padding-left: 200px;                   
-                }
-                .adjust2 {
-                    display: flex;
-                    height: 500px;
-                }
-            }
-        </style>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     
     <body>
@@ -526,6 +392,78 @@
                     <div class="row justify-content-center align-items-center">
 
                         <div class="col-lg-12 col-12">
+                            <h4 class="partners-section-title bg-white shadow-lg">Apply For Internship</h4>
+                        </div>
+
+                       <h3 style="text-decoration: none; padding-bottom: 15px;">Apply For Internship and Mentorship Programs</h3>
+                       <h6 style="font-weight: 0;">Seize the opportunity to gain invaluable experience and jumpstart your career <br>with an internship that propels you towards success.</h6>
+                        <h7 style="font-weight: 500;">The Suvidha Foundation Internship Program is a unique opportunity for students and recent graduates to gain experience and contribute to the work of Suvidha Foundation. 
+                            Along with undertaking tasks related to their specific skills, we encourage interns to develop a reputable professional portfolio.</h7>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="testimonial-section section-padding section-bg">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row" style="padding-bottom: 30px;">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="text-white mb-4">What people are talking about our<br> charity activities</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="featured-block mb-lg-0">
+                                <div class="d-flex align-items-center mb-3" style="display: flex; justify-content: center;">
+                                    <img src="icons/img1.jpg" style="height: 400px; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="featured-block mb-lg-0">
+                                <div class="d-flex align-items-center mb-3" style="display: flex; justify-content: center;">
+                                    <img src="icons/img2.jpg" style="height: 400px; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="featured-block mb-lg-0">
+                                <div class="d-flex align-items-center mb-3" style="display: flex; justify-content: center;">
+                                    <img src="icons/img3.jpg" style="height: 400px; width: auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="morerev">
+                        <a href="https://drive.google.com/drive/u/1/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8" class="custom-btn btn button button--atlas mt-2 ms-auto morerev2">
+                            <span >See More</span>
+
+                            <div class="marquee" aria-hidden="true">
+                                <div class="marquee__inner">
+                                    <span>See More</span>
+                                    <span>See More</span>
+                                    <span>See More</span>
+                                    <span>See More</span>
+                                    <span>See More</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="partners-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-12 col-12">
                             <h4 class="partners-section-title bg-white shadow-lg">Our Collaborative Initiatives
                             </h4>
                         </div>
@@ -545,6 +483,8 @@
                     </div>
                 </div>
             </section>
+
+
         </main>
 
 
