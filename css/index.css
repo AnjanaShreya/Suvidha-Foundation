@@ -140,3 +140,10 @@ h3 {
     display: flex; 
     justify-content: center;
 }
+.intern {
+    background-color: #a7cced; 
+    margin-top: 80px;
+}
+.intern:hover {
+    scale: (1.2); 
+}
