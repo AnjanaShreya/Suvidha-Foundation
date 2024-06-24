@@ -19,48 +19,62 @@
         <link href="css/tooplate-clean-work.css" rel="stylesheet">
 
         <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto auto auto;
-              padding: 10px;
+            body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(120px);
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+        }
+
+        .grid-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .grid-item > a > img {
+            border-radius: 20px;
+            border: solid 2px grey;
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .grids {
+            padding: 10px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .zoom {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .zoom:hover {
+            animation: zoomAnimation 1s forwards;
+        }
+
+        @keyframes zoomAnimation {
+            0% {
+                transform: scale(1);
             }
-            .grid-item {
-              font-size: 30px;
-              text-align: center;
-              opacity: 0;
-              transform: translateY(120px);
-              transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+            100% {
+                transform: scale(1.15);
             }
-            .grid-item.visible {
-              opacity: 1;
-              transform: translateY(0);
-            }
-            .grid-item > a > img {
-                border-radius: 20px;
-                border: solid 2px grey;
-            } 
-            .grids {
-                padding: 10px;
-                font-size: 23px;
-                font-weight: bold;
-            }
-            .zoom {
-                width: 100%;
-                height: 100%;
-                transition: transform 0.5s ease;
-            }
-            .zoom:hover {
-                animation: zoomAnimation 1s forwards;
-            }
-            @keyframes zoomAnimation {
-                0% {
-                    transform: scale(1);
-                }
-                100% {
-                    transform: scale(1.15);
-                }
-            }
-            @media (min-width: 1200px) {
+        }
+            /* @media (min-width: 1200px) {
                 .grid-container {
                     display: grid;
                     grid-template-columns: auto auto auto;
@@ -77,7 +91,7 @@
                     display: grid;
                     grid-template-columns: min-content;
                 }
-            }
+            } */
         </style>
     </head>
     
@@ -182,52 +196,74 @@
                         </div>
                     </div>
                 </div>
-                <section class="team-section section-padding section-bg">
+                <section class="team-section section-padding section-bg">                
                     <div class="container">
                         <div class="row">                            
                             <div class="grid-container">
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/11DrNvVoYiIlmKUDW2AvsiklJTuIDL3Gk" target="_blank"><img src="simages/free-workshops.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/11DrNvVoYiIlmKUDW2AvsiklJTuIDL3Gk" target="_blank">
+                                        <img src="simages/free-workshops.jpg" alt="FREE WORKSHOPS">
+                                    </a>
                                     <p class="grids">FREE WORKSHOPS</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1FKG4shImI-9JRavKIP-0b-Tp9Hd205VI" target="_blank"><img src="simages/BooksDistribution.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1FKG4shImI-9JRavKIP-0b-Tp9Hd205VI" target="_blank">
+                                        <img src="simages/BooksDistribution.jpg" alt="BOOK DISTRIBUTION">
+                                    </a>
                                     <p class="grids">BOOK DISTRIBUTION</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank"><img src="simages/OnlineEvents.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank">
+                                        <img src="simages/OnlineEvents.jpg" alt="ONLINE EVENTS">
+                                    </a>
                                     <p class="grids">ONLINE EVENTS</p>
                                 </div>  
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1nOFKvOjhWsbfVVPGumOfpLrFe2364_zK" target="_blank"><img src="simages/ClothsDistribution.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1nOFKvOjhWsbfVVPGumOfpLrFe2364_zK" target="_blank">
+                                        <img src="simages/ClothsDistribution.jpg" alt="CLOTHES DISTRIBUTION">
+                                    </a>
                                     <p class="grids">CLOTHES DISTRIBUTION</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1V5Owzjc00GT_U2Mw_bdOMbiCYSxmScSw" target="_blank"><img src="simages/TreePlantation.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1V5Owzjc00GT_U2Mw_bdOMbiCYSxmScSw" target="_blank">
+                                        <img src="simages/TreePlantation.jpg" alt="TREE PLANTATIONS">
+                                    </a>
                                     <p class="grids">TREE PLANTATIONS</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1ucG-Ltm_6fAwZ-1ta4-nHhRdKpu-3EAN" target="_blank"><img src="simages/FreeEducation.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1ucG-Ltm_6fAwZ-1ta4-nHhRdKpu-3EAN" target="_blank">
+                                        <img src="simages/FreeEducation.jpg" alt="FREE EDUCATION">
+                                    </a>
                                     <p class="grids">FREE EDUCATION</p>
                                 </div>  
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1_V-acFibBsweHcM-R-P__4EQWpauB6dK" target="_blank"><img src="simages/Women'sDay.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1_V-acFibBsweHcM-R-P__4EQWpauB6dK" target="_blank">
+                                        <img src="simages/Women'sDay.jpg" alt="WOMEN'S DAY">
+                                    </a>
                                     <p class="grids">WOMEN'S DAY</p>
                                 </div>  
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1AfCK5kJqf9_N_JGd8wqUhNesS8k1tVmw" target="_blank"><img src="simages/FoodDistribution.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1AfCK5kJqf9_N_JGd8wqUhNesS8k1tVmw" target="_blank">
+                                        <img src="simages/FoodDistribution.jpg" alt="FOOD DISTRIBUTION">
+                                    </a>
                                     <p class="grids">FOOD DISTRIBUTION</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank"><img src="simages/SuvidhaEvents.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1LF6c_FtHzv1ldXKXZ6oRueaD6OtIWsms" target="_blank">
+                                        <img src="simages/SuvidhaEvents.jpg" alt="SUVIDHA EVENTS">
+                                    </a>
                                     <p class="grids">SUVIDHA EVENTS</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1tMkME479AhVFQ5pUZag3-YPgNWhIn7Rl" target="_blank"><img src="simages/SanitaryPad.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1tMkME479AhVFQ5pUZag3-YPgNWhIn7Rl" target="_blank">
+                                        <img src="simages/SanitaryPad.jpg" alt="EMPOWERING WOMEN">
+                                    </a>
                                     <p class="grids">EMPOWERING WOMEN</p>
                                 </div>
                                 <div class="grid-item zoom">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1xr7jhBYaap-tZ2puU5HiF6ccitJtBfaB" target="_blank"><img src="simages/AnimalFeeding.jpg"></a>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1xr7jhBYaap-tZ2puU5HiF6ccitJtBfaB" target="_blank">
+                                        <img src="simages/AnimalFeeding.jpg" alt="ANIMAL FEEDING">
+                                    </a>
                                     <p class="grids">ANIMAL FEEDING</p>
                                 </div>
                             </div>
@@ -240,63 +276,127 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-6 col-md-6 col-12 mb-4 pb-2">
-                        <h5 class="site-footer-title mb-3">Quick Links</h5>
-
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="events.html" class="site-footer-link">Events</a>
+  
+                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+                        <div>
+                            <img src="simages/SuvidhaLogo.png" alt="">
+                        </div>
+                    </div>
+  
+                    
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Office Headquarters-</h5>
+  
+                        <p class="text-white d-flex mt-3 mb-2">
+                            Nagpur Headquarters:<br>
+                            Suvidha Foundation, Walni Ward No. 1, Jai Bhole Nagar, Walni, Saoner Nagpur, Maharashtra 441102
+                        </p>
+  
+                        <p class="text-white d-flex mb-2">
+                            Hyderabad Headquarter:<br>
+                            Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad
+                        </p>
+  
+                        <ul class="social-icon mt-4">
+                            <li class="social-icon-item">
+                                <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" target="_blank" class="social-icon-link button button--skoll">
+                                    <span class="bi-linkedin"></span>
+                                </a>
                             </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="about.html" class="site-footer-link">Gallery</a>
+  
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank" class="social-icon-link button button--skoll">
+                                    <span class="bi-facebook"></span>
+                                </a>
                             </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="about.html" class="site-footer-link">Our Donors</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="contact.html" class="site-footer-link">Contact</a>
+  
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/suvidha_mahila_mandal" target="_blank" class="social-icon-link button button--skoll">
+                                    <span class="bi-instagram"></span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-6 col-md-6 col-12 mb-4 pb-2">
-                        <h5 class="site-footer-title mb-3">Contact Information</h5>
-
-                        <p class="text-white d-flex mb-2">
-                            <i class="bi-telephone me-2"></i>
-
-                            <a href="tel:+91 7020044091" class="site-footer-link">
-                                +91 7020044091
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex">
-                            <i class="bi-envelope me-2"></i>
-
-                            <a href="mailto:info@suvidhafoundationedutech.org" class="site-footer-link">
-                                info@suvidhafoundationedutech.org
-                            </a>
-                        </p>
-
-                        <p class="text-white d-flex mt-3">
-                            <i class="bi-geo-alt me-2"></i>
-                            Suvidha Mahila Mandal  Vijaypura, Basmath, Hingoli, Maharashtra - 431512
-                        </p>
+  
+  
+  
+                    <div class="col-lg-5 col-md-12 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Our Certificates</h5>
+  
+                        <ul class="footer-menu" style="font-size: 20px;">
+                            <li class="footer-menu-item">
+                                <a href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf" target="_blank" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    80G Certificate
+                                </a>
+                            </li>
+  
+                            <li class="footer-menu-item">
+                                <a href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf" target="_blank" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    12A Certificate
+                                </a>
+                            </li>
+  
+                            <li class="footer-menu-item">
+                                <a href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF" target="_blank" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    CSR Certificate
+                                </a>
+                            </li>
+  
+                            <li class="footer-menu-item">
+                                <a href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf" target="_blank" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Suvidha Darpan Registration
+                                </a>
+                            </li>
+  
+                            <li class="footer-menu-item">
+                                <a href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf" target="_blank" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Suvidha Pan Card
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="col-lg-12 col-12">
-                        <div class="copyright-text-wrap">
-                            <p class="copyright-text">Copyright © 2023 Suvidha Foundation
-                            <br>All Rights Reserved. 
-                            <br><br>
-                            Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+  
+                    <div class="col-lg-3 col-6 mt-3 mt-lg-0 mt-md-0">
+                        <div class="featured-block">
+                            <h5 class="text-white mb-3">Useful Links</h5>
+                            <ul style="font-size: 20px;">
+                                <li class="footer-menu-item">
+                                    <a href="https://suvidhafoundationedutech.org/verify.php" target="_blank" class="footer-menu-link">
+                                        <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                        Verify Your Certificate
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" target="_blank" class="footer-menu-link">
+                                        <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                        privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    
+                </div>
+            </div>
+  
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+  
+                        <div class="col-lg-6 col-12">
+                            <p class="copyright-text mb-0">© Suvidha Foundation (Suvidha Mahila Mandal), All Right Reserved.</p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-12 text-end">
+                            <p class="copyright-text mb-0">
+                            // <a href="#" target="_parent">By Suvidha Foundation</a> //</p>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </footer>
